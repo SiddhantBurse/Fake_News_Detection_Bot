@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --body-bg: linear-gradient(135deg, #f5f7fa 0%, #afe0f9 100%);
+    --msger-bg: #fff;
+    --border: 2px solid #ddd;
+    --left-msg-bg: #afe0f9;
+    --right-msg-bg: #afe0f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/static/img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+.bots {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 27%;
+}
+
+.msger {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 867px;
+    margin: 25px 310px;
+    height: calc(100% - 50px);
+    border: var(--border);
+    border-radius: 5px;
+    background: var(--msger-bg);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.msger-header {
+    /* display: flex; */
+    font-size: medium;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    border-bottom: var(--border);
+    background: #00e699;
+    color: #fff;
+    font-weight: bold;
+}
+
+.msger-chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.msger-chat::-webkit-scrollbar {
+    width: 6px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+}
+
+.msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.msg-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #00e699;
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.msg-bubble {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #e6fff7;
+}
+
+.msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.msg-info-time {
+    font-size: 0.85em;
+}
+
+.left-msg .msg-bubble {
+    border-bottom-left-radius: 0;
+}
+
+.right-msg {
+    flex-direction: row-reverse;
+}
+
+.right-msg .msg-bubble {
+    background: var(--right-msg-bg);
+    color: black;
+    border-bottom-right-radius: 0;
+}
+
+.right-msg .msg-img {
+    margin: 0 0 0 10px;
+}
+
+.msger-inputarea {
+    display: flex;
+    padding: 10px;
+    border-top: var(--border);
+    background: #00e699;
+    ;
+}
+
+.msger-inputarea * {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.msger-input {
+    flex: 1;
+    background: white;
+}
+
+.msger-send-btn {
+    margin-left: 10px;
+    background: #ff9f00;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+}
+
+.msger-send-btn:hover {
+    background: #ffbc4e;
+}
+
+.msger-chat {
+    background-color: white;
+}
+
+.home-btn {
+    color: white;
+    float: left;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+    color: black;
+    background-color: #afe0f9;
+}
+
+header.main-header {
+
+
+ width: 100%;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+     
+
+}
+
+
+
+header.main-header ul.header-options {
+
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 100px;
+
+}
+
+header.main-header ul.header-options li {
+
+    display: inline-block;
+
+}
+
+
+header.main-header ul.header-options li.option {
+
+    font-size: 18px;
+    font-weight: 900;
+    color: #6D6F79;
+    font-family: Arial;
+    cursor: pointer;
+
+}
+
+header.main-header ul.header-options a {
+
+    font-size: 18px;
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+header.main-header ul.header-options li.option a:hover {
+
+    font-size: 18px;
+    color: green;
+
+}
+
+
+
+body{
+   background-color:#018A59;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+/*responsive*/
+@media(max-width: 991px){
+    .team-section .team-items .item{
+      flex-basis: calc(50% - 30px);
+       max-width: calc(50% - 30px);
+
+   }
+}
+
+@media(max-width: 767px){
+    .team-section .team-items .item{
+      flex-basis: calc(100%);
+       max-width: calc(100%);
+
+   }
+}
+
+.end{
+    background: #fcfcfc;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
